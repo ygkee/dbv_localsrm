@@ -1,0 +1,23 @@
+CREATE TABLE `srm_bom_item_data_1` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `created_on` datetime DEFAULT NULL,
+  `created_by` int(11) DEFAULT NULL,
+  `private` int(11) DEFAULT '0',
+  `active` tinyint(4) DEFAULT '1',
+  `f_item_no_` varchar(5) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `f_bom_no_` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `f_item_type` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `f_item_material` int(11) DEFAULT NULL,
+  `f_description_of_material` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `f_quantity` double DEFAULT NULL,
+  `f_unit` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `f_assembly` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `f_valid_from` date DEFAULT NULL,
+  `f_valid_to` date DEFAULT NULL,
+  `f_phantom_item_indicator` tinyint(4) DEFAULT NULL,
+  `f_sort_string` varchar(3) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `f_component_scrap___` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `f_cad_indicator` tinyint(4) DEFAULT NULL,
+  `f_remark` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci
